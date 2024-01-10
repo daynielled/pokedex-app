@@ -3,7 +3,7 @@ import Pokecard from "./Pokecard";
 
 const Pokedex = ({ pokemonList, totalExperience, isWinner }) => {
     return (
-        <div className="pokedex">
+        <div className="pokedex-container">
             {pokemonList.map((pokemon) => (
                 <Pokecard
                     key={pokemon.id}

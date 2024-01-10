@@ -19,8 +19,9 @@ const Pokegame = ({ pokemonList }) => {
     const winnerHand = totalExpHand1 > totalExpHand2 ? hand1 : hand2;
 
     return (
-        <div>
+        <div className="pokegame-container">
             <Pokedex pokemonList={hand1} totalExperience={totalExpHand1} isWinner={winnerHand === hand1} />
+            <hr className="pokegame-divider" />
             <Pokedex pokemonList={hand2} totalExperience={totalExpHand2} isWinner={winnerHand === hand2} />
         </div>
     );

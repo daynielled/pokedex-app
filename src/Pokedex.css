@@ -1,0 +1,11 @@
+.pokedex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.winner-message {
+    color: green;
+    font-weight: bold;
+}

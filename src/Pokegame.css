@@ -1,0 +1,11 @@
+.pokegame-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokegame-divider {
+    width: 2px;
+    background-color: #ccc;
+    align-self: stretch;
+    margin: 20px 0;
+}
