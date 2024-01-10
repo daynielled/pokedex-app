@@ -1,7 +1,7 @@
 import React from "react";
 import Pokecard from "./Pokecard";
 
-const Pokedex = ({ pokemonList }) => {
+const Pokedex = ({ pokemonList, totalExperience, isWinner }) => {
     return (
         <div className="pokedex">
             {pokemonList.map((pokemon) => (
@@ -14,6 +14,8 @@ const Pokedex = ({ pokemonList }) => {
                      />
 
             ))}
+            <p>Total Experience: {totalExperience}</p>
+            {isWinner && <p className="winner-message">THIS HAND WINS!</p>}
 
         </div>
     );
